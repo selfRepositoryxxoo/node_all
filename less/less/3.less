@@ -1,0 +1,20 @@
+.bordered (@radius:5px){
+  border:1px solid red;
+  border-radius: @radius;
+  height: 50px;
+  width: 50px;
+}
+
+.div1 {
+  color: #111;
+  .bordered(0px);
+}
+
+.div2 {
+  color: red;
+  .bordered(10px);
+}
+.div3 {
+  color: red;
+  .bordered;
+}

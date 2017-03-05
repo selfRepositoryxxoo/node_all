@@ -1,0 +1,12 @@
+//不是完全匹配就可以是使用这个方法
+.mixin (@a) when (@a =red) {
+  background-color: red;
+}
+.mixin (@a) when (@a =green) {
+  background-color: green;
+}
+.mixin (@a) {
+  color: #fff;
+}
+.red { .mixin(red) }
+.green { .mixin(green) }
